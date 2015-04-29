@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14E7f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="rxx-Ok-WRf">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="T09-c8-0yJ">
+            <objects>
+                <viewController id="rxx-Ok-WRf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rnQ-y0-afN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4Vz-8T-2Gh">
+                                <rect key="frame" x="16" y="149" width="288" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="視訊驗證">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ZYv-yB-CHO" kind="modal" id="ibu-n6-21G"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cpm-oz-lIo">
+                                <rect key="frame" x="16" y="260" width="288" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="身分證驗證">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="FJj-2R-IYK" kind="modal" id="Qzu-QU-kva"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aa7-oR-vGk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="212" y="-5"/>
+        </scene>
+        <!--身份驗證-->
+        <scene sceneID="1vL-bU-SoV">
+            <objects>
+                <viewController id="td2-he-uXF" customClass="IDuploadViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9jn-cc-XTu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="xLo-cC-c6P">
+                                <rect key="frame" x="0.0" y="325" width="320" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="請上傳您的身分證自拍照" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Jh7-Ef-zO4">
+                                        <rect key="frame" x="8" y="8" width="304" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="idphoto.png" id="6nA-wz-OJu">
+                                        <rect key="frame" x="21" y="37" width="67" height="67"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="idphoto.png" id="Q9W-tZ-fUe">
+                                        <rect key="frame" x="103" y="37" width="67" height="67"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="l3A-MC-bok">
+                                        <rect key="frame" x="21" y="37" width="67" height="67"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btn1Pressed:" destination="td2-he-uXF" eventType="touchUpInside" id="KQa-qe-HBg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HBS-Fg-K1g">
+                                        <rect key="frame" x="103" y="37" width="67" height="67"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btn2Pressed:" destination="td2-he-uXF" eventType="touchUpInside" id="WH3-zH-vwI"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="oSU-KS-eso">
+                                        <rect key="frame" x="8" y="117" width="304" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="提交">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="sendBtnPressed:" destination="td2-he-uXF" eventType="touchUpInside" id="ylB-9s-8Z0"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="為什麼要身份驗證？" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QvY-js-yeY">
+                                <rect key="frame" x="16" y="79" width="288" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="19"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="根據調查統計，有身份驗證的人接到任務的機會是没有身份驗證的人的10倍以上" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JMx-8l-ZVF">
+                                <rect key="frame" x="16" y="90" width="288" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="特別聲明：您的資料不會被公開！" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="B1J-N2-5P5">
+                                <rect key="frame" x="16" y="145" width="289" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="身分證自拍照示範" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Nho-46-3aR">
+                                <rect key="frame" x="16" y="168" width="289" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IDBG.png" id="w8s-EJ-iCi">
+                                <rect key="frame" x="0.0" y="186" width="320" height="172"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="身份驗證" id="LLs-uL-eRL"/>
+                    <connections>
+                        <outlet property="btn1" destination="l3A-MC-bok" id="wNn-tg-2am"/>
+                        <outlet property="btn2" destination="HBS-Fg-K1g" id="XGY-Pn-hyP"/>
+                        <outlet property="id1ImageView" destination="6nA-wz-OJu" id="2f1-OS-hr1"/>
+                        <outlet property="id2ImageView" destination="Q9W-tZ-fUe" id="pjQ-Kn-mWz"/>
+                        <outlet property="sendBtn" destination="oSU-KS-eso" id="YuJ-Wm-spS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DoH-zy-1Fr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1214" y="384"/>
+        </scene>
+        <!--視訊驗證-->
+        <scene sceneID="tX5-G7-M8B">
+            <objects>
+                <viewController id="0wT-4U-fYF" customClass="StartViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tuG-bu-5uY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="根據調查統計" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" id="9V4-fi-nhj">
+                                <rect key="frame" x="16" y="111" width="288" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="                      98%以上的發案業主表示他們一定優先考慮有視訊身份驗證的幫手。" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" id="mvF-Bn-NO8">
+                                <rect key="frame" x="16" y="108" width="288" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="為什麼要視訊驗證？" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pn3-aP-3yH">
+                                <rect key="frame" x="16" y="86" width="288" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="19"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="特別聲明：您的視訊資料不會被公開！" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9QM-XL-jQ3">
+                                <rect key="frame" x="16" y="188" width="289" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="開始視訊驗證前，請先確定光線充足！" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aRP-6A-ytO">
+                                <rect key="frame" x="16" y="217" width="289" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aWB-CL-Lnq">
+                                <rect key="frame" x="16" y="260" width="288" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="開始視訊驗證">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startBtnPressed:" destination="0wT-4U-fYF" eventType="touchUpInside" id="pyr-Am-u7W"/>
+                                    <segue destination="2" kind="push" id="aPp-l5-pzA"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fblogo.png" id="N8a-G8-M5U">
+                                <rect key="frame" x="16" y="326" width="288" height="119"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="視訊驗證" id="XCv-Ax-cVF"/>
+                    <connections>
+                        <outlet property="startBtn" destination="aWB-CL-Lnq" id="4wr-oa-9Al"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="70r-Hh-KAn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1214" y="-284"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController wantsFullScreenLayout="YES" id="2" customClass="FHViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="44" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar hidden="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" id="OP7-fV-xX6">
+                                <rect key="frame" x="0.0" y="436" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <barButtonItem title="Record" id="qvj-xG-m4y">
+                                        <connections>
+                                            <action selector="recordStopAction:event:" destination="2" id="U1M-h4-Jv5"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="FRi-Xa-tWw"/>
+                                    <barButtonItem title="Framerate" style="plain" id="7eL-oV-e94">
+                                        <attributedString key="userComments">
+                                            <fragment content="gdf">
+                                                <attributes>
+                                                    <font key="NSFont" metaFont="smallSystem"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="ajf-cc-MXK"/>
+                                    <barButtonItem title="Settings" id="dqo-eo-SYE">
+                                        <connections>
+                                            <action selector="settingsAction:event:" destination="2" id="sjN-mS-ePW"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Filters" id="PVb-j0-Om0">
+                                        <connections>
+                                            <action selector="filtersAction:event:" destination="2" id="sp4-iC-65g"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="faceRed.png" id="juM-fT-nTi">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MO6-gL-M2z">
+                                <rect key="frame" x="16" y="447" width="288" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" id="joe-wJ-bLC"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="facebgImageView" destination="juM-fT-nTi" id="GV3-rh-jGK"/>
+                        <outlet property="filtersButton" destination="PVb-j0-Om0" id="l5J-U3-NrX"/>
+                        <outlet property="fpsLabel" destination="MO6-gL-M2z" id="yEV-Wj-Lbt"/>
+                        <outlet property="fpsLabeltext" destination="MO6-gL-M2z" id="ogA-3A-JEf"/>
+                        <outlet property="recordStopButton" destination="qvj-xG-m4y" id="Of3-lN-4gl"/>
+                        <outlet property="settingsButton" destination="dqo-eo-SYE" id="KN0-rh-g3r"/>
+                        <outlet property="toolbar" destination="OP7-fV-xX6" id="NHs-AB-NYo"/>
+                        <segue destination="wE4-d2-hnW" kind="push" identifier="photo" id="YGt-Vg-Tkp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1634" y="-284"/>
+        </scene>
+        <!--上傳存檔照-->
+        <scene sceneID="FHY-7C-z26">
+            <objects>
+                <viewController id="wE4-d2-hnW" customClass="UploadViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bww-zh-Kwc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="請上傳一張清晰的正面照片作為視訊驗證比對" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lS0-vP-Lzo">
+                                <rect key="frame" x="16" y="53" width="288" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="此照片不會分享給其他使用者" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ePM-oz-3O0">
+                                <rect key="frame" x="16" y="77" width="288" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar.png" id="jK5-98-4VY">
+                                <rect key="frame" x="80" y="126" width="160" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ZTi-Wr-Z5n">
+                                <rect key="frame" x="16" y="294" width="288" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="上傳我的照片">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="uploadButtonPressed:" destination="wE4-d2-hnW" eventType="touchUpInside" id="dUF-q8-FyZ"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ndx-Cw-FQb">
+                                <rect key="frame" x="16" y="332" width="288" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="提交">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendBtnPressed:" destination="wE4-d2-hnW" eventType="touchUpInside" id="3zw-cs-jKC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="上傳存檔照" id="K7Y-wY-60x">
+                        <barButtonItem key="leftBarButtonItem" title="取消返回" id="TiL-1u-gDl"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="myPhotoBtn" destination="ZTi-Wr-Z5n" id="cjS-Bb-s7K"/>
+                        <outlet property="myPhotoImageView" destination="jK5-98-4VY" id="EeZ-uJ-Gti"/>
+                        <outlet property="sendBtn" destination="Ndx-Cw-FQb" id="qNf-2o-uQ5"/>
+                        <segue destination="rxx-Ok-WRf" kind="modal" identifier="gohome" modalTransitionStyle="crossDissolve" id="l7Q-af-vrv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Gc-sO-nF8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2043" y="-284"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QWA-bV-fCY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZYv-yB-CHO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cEZ-Be-pjX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0wT-4U-fYF" kind="relationship" relationship="rootViewController" id="EZF-6O-YGz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cg1-sp-dwO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="682" y="-284"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ukC-j6-cEy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FJj-2R-IYK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3TM-bj-nYw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="td2-he-uXF" kind="relationship" relationship="rootViewController" id="hUR-KQ-nD9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dUS-d1-eJa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="682" y="384"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="IDBG.png" width="375" height="202"/>
+        <image name="avatar.png" width="600" height="600"/>
+        <image name="faceRed.png" width="750" height="1334"/>
+        <image name="fblogo.png" width="200" height="200"/>
+        <image name="idphoto.png" width="67" height="67"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <nil key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
